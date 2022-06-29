@@ -1,0 +1,333 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet"  href="{% static 'style.css' %}">
+        <title>Medi-Cure</title>
+        <link rel="icon" href="{% static 'img/icon.png' %}">
+        
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="" class="nav__logo">
+                    <i class="fa-solid fa-stethoscope"></i>  
+                      Medi-Cure
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#doctor" class="nav__link">Doctors</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#service" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#join" class="nav__link">Join Us</a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+      
+
+             <section class="home section" id="home">
+                 <div class="home_container ">
+                     <div class="home_group">
+                         <div class="main-img" id="home-1">
+                            <img src="{% static 'img/doctor.png' %}" alt="" class="home_img">
+                         </div>
+                         <div class="home_data">
+                             <h2 class="home_title">
+                                 Stay Healthy, Live Long
+                             </h2>
+                         </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="{% static 'img/about2.png' %}" class="about__img" alt="">
+                    </div>
+
+                    <div class="about__data">
+                        <h1 class="doctor_heading">Your Health is Our <span> first Priority</span></h1>
+                        <p class="about__description">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                         officia deserunt mollit anim id est laborum."
+                        </p>
+                        <a href="#" class="button">Know More</a>
+                    </div>
+                </div>
+            </section>
+
+                 <section class="feature-container">
+                     <div class="feature_icon">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                        <h3>1000+</h3>
+                        <p>happy client</p>
+                     </div>
+                     <div class="feature_icon">
+                        <i class="fa-solid fa-award"></i>
+                        <h3>10+</h3>
+                        <p>Medi Awards</p>
+                     </div>
+                     <div class="feature_icon">
+                        <i class="fa-solid fa-head-side-cough-slash"></i>
+                        <h3>5000+</h3>
+                        <p>Patient Cured</p>
+                     </div>
+                     <div class="feature_icon">
+                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                        <h3>30+</h3>
+                        <p>Campaigns</p>
+                     </div>
+                 </section>
+
+            <section class="doctor" id="doctor">
+                <h1 class="doctor_heading">Our<span> Doctors</span></h1>
+                <div class="doctor-container">
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>DR.Jhatka</h3>
+                        <span>Physiatrist</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>Doc.ock</h3>
+                        <span>Family Physician</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>DR.pataka</h3>
+                        <span>Dermatologist</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>DR.Four</h3>
+                        <span>Cardiologist</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>DR.Five</h3>
+                        <span>Neurologist</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                    <div class="doctor-box">
+                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
+                        <h3>DR.Six</h3>
+                        <span>Gynecologist</span>
+                        <div class="doctor_social">
+                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+                            <a href="#" target="_blank" class="fab fa-instagram"></a>
+                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="service" id="service">
+                <div class="service_container">
+                    <h1 class="doctor_heading">Our<span> Services</span></h1>
+                   <div class="service_row">
+                       <div class="service_data">
+                        <h3>  <i class="fa-solid fa-user-doctor"></i> Service1</h3>
+                        <p> Lorem ipsum dolor sit, amet consect</p>
+                        <h3> <i class="fa-solid fa-user-doctor"></i> Service2</h3>
+                        <p> Lorem ipsum dolor sit, amet consect</p>
+                        <h3>  <i class="fa-solid fa-user-doctor"></i> Service3</h3>
+                        <p> Lorem ipsum dolor sit, amet consect</p>
+                       </div>
+                       <div class="service_img">
+                        <img src="{% static 'img/nurse.png' %}">
+                    </div>
+                   </div>
+                </div>
+
+            </section>
+
+            <section class="join" id="join">
+                <div class="join_container">
+                    <div class="join_row">
+                        <div class="join_data">
+                          <button class="join_btn">  
+                            <h3 onclick="audio1.play();"><i class="fa-solid fa-hand-holding-droplet"></i>  Donate Blood</h3>
+                         </button>
+                        </div>
+                        <div class="join_data">
+                           <button  class="join_btn">
+                            <h3><i class="fa-solid fa-dollar-sign"></i> Support Us</h3>
+                           </button>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="footer section">
+            
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="fa-solid fa-stethoscope"></i>Medi-Cure
+                    </a>
+                    <p class="footer__description">
+                        Your Personal Doctor.<br>
+                        
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">History</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="" class="footer__link">Know about us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow Us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__social-link">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </ul>
+                </div> 
+
+                <div class="footer__copy">
+                    &#169; Shrabya. All rights reserved
+                </div>
+        </footer>
+
+    </body>
+    <script>
+        const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.add('show-menu')
+    })
+}
+
+
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+function scrollHeader(){
+    const header = document.getElementById('header')
+    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+
+function img(){
+    const home = document.getElementById('home-1')
+    if(this.scrollY >= 50) home.classList.add('animation'); 
+    else home.classList.remove('animation')
+}
+window.addEventListener('scroll', img)
+
+
+
+const audio1 = new Audio();
+audio1.src = "audio/click3.mp3";
+
+    </script>
+</html>
