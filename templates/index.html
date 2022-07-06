@@ -1,333 +1,228 @@
 {% load static %}
 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        <link rel="stylesheet"  href="{% static 'style.css' %}">
-        <title>Medi-Cure</title>
-        <link rel="icon" href="{% static 'img/icon.png' %}">
-        
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="" class="nav__logo">
-                    <i class="fa-solid fa-stethoscope"></i>  
-                      Medi-Cure
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__items">
-                            <a href="#home" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="#doctor" class="nav__link">Doctors</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="#service" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__items">
-                            <a href="#join" class="nav__link">Join Us</a>
-                        </li>
-                    </ul>
-                    <div class="nav__close" id="nav-close">
-                        <i class="fa-solid fa-xmark"></i>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrabya - Portfolio</title>
+    <script src="https://kit.fontawesome.com/10715cfae1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="{% static 'img/icon1.png' %}">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="user">
+            <img src="{% static 'img/p3.png' %}" alt="">
+            <h3 class="name">Shrabya</h3>
+            <p class="post">front end developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <div id="menu" class="fas fa-bars"></div>
+    <div class="main">
+
+
+        <section class="home" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info">
+                        <h3 class="hello">my name is <span>Shrabya</span></h3>
+                        <h3 class="profession">i'm a <span class="notype">Web </span><span class="typing"> </span></h3>
+                        <p>Hello World !!! my name is shrabya raj ghimire. i'm from biratnagar, a beutiful city located in eastern part of nepal. I'm currently studying in high school ie. 10 +2 in pokhariya secondary school -biratnagar. i'm a learning student
+                            intrested on coding. it would be a great opportunity to work together in a project. you can contact me through the contact section below.</p>
+                        <a href="#about" class="btn ">more about me</a>
+                    </div>
+                    <div class="home-img">
+                        <img src="{% static 'img/home.png' %}" alt="">
                     </div>
                 </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+
+            <h1 class="heading"> <span>about</span> me </h1>
+
+            <div class="row">
+
+                <div class="info">
+                    <h3> <span> name : </span> Shrabya Raj Ghimire</h3>
+                    <h3> <span> age : </span> 17 </h3>
+                    <h3> <span> job : </span> student </h3>
+                    <h3> <span> qualification : </span> +2 </h3>
+                    <h3> <span> post : </span> front end developer </h3>
+                    <h3> <span> language : </span> <span class="lang" style="color:  hsl(219, 69%, 56%);"> </span></h3>
+                    <a href="doc/Shrabya-cv.pdf" download="cv.pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
                 </div>
-            </nav>
-        </header>
 
-      
+                <div class="counter">
+                    <div class="skills"><span>my Skills</span>
+                        <div class="skills-2">
 
-             <section class="home section" id="home">
-                 <div class="home_container ">
-                     <div class="home_group">
-                         <div class="main-img" id="home-1">
-                            <img src="{% static 'img/doctor.png' %}" alt="" class="home_img">
-                         </div>
-                         <div class="home_data">
-                             <h2 class="home_title">
-                                 Stay Healthy, Live Long
-                             </h2>
-                         </div>
-                         </div>
-                     </div>
-                 </div>
-             </section>
-
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__group">
-                        <img src="{% static 'img/about2.png' %}" class="about__img" alt="">
-                    </div>
-
-                    <div class="about__data">
-                        <h1 class="doctor_heading">Your Health is Our <span> first Priority</span></h1>
-                        <p class="about__description">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                         officia deserunt mollit anim id est laborum."
-                        </p>
-                        <a href="#" class="button">Know More</a>
-                    </div>
-                </div>
-            </section>
-
-                 <section class="feature-container">
-                     <div class="feature_icon">
-                        <i class="fa-solid fa-face-smile-beam"></i>
-                        <h3>1000+</h3>
-                        <p>happy client</p>
-                     </div>
-                     <div class="feature_icon">
-                        <i class="fa-solid fa-award"></i>
-                        <h3>10+</h3>
-                        <p>Medi Awards</p>
-                     </div>
-                     <div class="feature_icon">
-                        <i class="fa-solid fa-head-side-cough-slash"></i>
-                        <h3>5000+</h3>
-                        <p>Patient Cured</p>
-                     </div>
-                     <div class="feature_icon">
-                        <i class="fa-solid fa-hand-holding-droplet"></i>
-                        <h3>30+</h3>
-                        <p>Campaigns</p>
-                     </div>
-                 </section>
-
-            <section class="doctor" id="doctor">
-                <h1 class="doctor_heading">Our<span> Doctors</span></h1>
-                <div class="doctor-container">
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>DR.Jhatka</h3>
-                        <span>Physiatrist</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
+                            <div class="skills-item">
+                                <h5>HTML5</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 85%;"></div>
+                                    <div class="skill-percent">76%</div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <h5>CSS3</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 76%;"></div>
+                                    <div class="skill-percent">76%</div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <h5>Javascript</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 55%;"></div>
+                                    <div class="skill-percent">55%</div>
+                                </div>
+                            </div>
+                            <div class="skills-item">
+                                <h5>Python</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 45%;"></div>
+                                    <div class="skill-percent">45%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>Doc.ock</h3>
-                        <span>Family Physician</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
-                        </div>
-                    </div>
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>DR.pataka</h3>
-                        <span>Dermatologist</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
-                        </div>
-                    </div>
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>DR.Four</h3>
-                        <span>Cardiologist</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
-                        </div>
-                    </div>
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>DR.Five</h3>
-                        <span>Neurologist</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
-                        </div>
-                    </div>
-                    <div class="doctor-box">
-                        <img src="{% static 'img/doc1.png' %}" class="doctor_img" alt="">
-                        <h3>DR.Six</h3>
-                        <span>Gynecologist</span>
-                        <div class="doctor_social">
-                            <a href="#" target="_blank" class="fab fa-facebook-f"></a>
-                            <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" class="fab fa-twitter"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="service" id="service">
-                <div class="service_container">
-                    <h1 class="doctor_heading">Our<span> Services</span></h1>
-                   <div class="service_row">
-                       <div class="service_data">
-                        <h3>  <i class="fa-solid fa-user-doctor"></i> Service1</h3>
-                        <p> Lorem ipsum dolor sit, amet consect</p>
-                        <h3> <i class="fa-solid fa-user-doctor"></i> Service2</h3>
-                        <p> Lorem ipsum dolor sit, amet consect</p>
-                        <h3>  <i class="fa-solid fa-user-doctor"></i> Service3</h3>
-                        <p> Lorem ipsum dolor sit, amet consect</p>
-                       </div>
-                       <div class="service_img">
-                        <img src="{% static 'img/nurse.png' %}">
-                    </div>
-                   </div>
+
                 </div>
 
-            </section>
+            </div>
 
-            <section class="join" id="join">
-                <div class="join_container">
-                    <div class="join_row">
-                        <div class="join_data">
-                          <button class="join_btn">  
-                            <h3 onclick="audio1.play();"><i class="fa-solid fa-hand-holding-droplet"></i>  Donate Blood</h3>
-                         </button>
-                        </div>
-                        <div class="join_data">
-                           <button  class="join_btn">
-                            <h3><i class="fa-solid fa-dollar-sign"></i> Support Us</h3>
-                           </button>
-                        </div>
-                        
-                        </div>
+        </section>
+
+
+        <section class="education" id="education">
+
+            <h1 class="heading"> my <span>education</span> </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2015-2020</span>
+                    <h3>POkhariya sec.School</h3>
+                    <p>I have completed my school in Pokhariya secondary school Nepal. It is the place where my intrest on coding develop. Here, i learned various life lesson as well.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2020-2022</span>
+                    <h3>High School</h3>
+                    <p>I am currently in high school preparing to face in obstacle later in professional life.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022</span>
+                    <h3>Python</h3>
+                    <p>I got my pyhton course from CSE,Biratnagar where i learned from basic to intermediate python course. Prepared for python projects in future.</p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <h1 class="heading">lets <span>Work together</span> !!!</h1>
+
+            <div class="row">
+
+                <div class="content">
+
+                    <h3 class="title">contact info</h3>
+
+                    <div class="info">
+                        <h3> <i class="fas fa-envelope"></i> shrabyaraj@gmail.com </h3>
+                        <h3> <i class="fas fa-phone"></i> +977 9746890222 </h3>
+                        <h3> <i class="fas fa-map-marker-alt"></i> Biratnagar, Morang </h3>
                     </div>
-                </div>
-            </section>
-            
-        </main>
 
-        <footer class="footer section">
-            
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">
-                        <i class="fa-solid fa-stethoscope"></i>Medi-Cure
-                    </a>
-                    <p class="footer__description">
-                        Your Personal Doctor.<br>
-                        
-                    </p>
                 </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Company
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#about" class="footer__link">About</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__link">History</a>
-                        </li>
-                    </ul>
-                </div>
+                <form method="post" action="">
+                    {% csrf_token %}
 
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Information
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="" class="footer__link">Know about us</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__link">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="" class="footer__link">Services</a>
-                        </li>
-                    </ul>
-                </div>
+                    <input type="text" placeholder="your name" class="box" name="name">
+                    <input type="email" placeholder="your email" class="box" name="email">
+                    <input type="text" placeholder="project" class="box" name="project">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Description" name="desc"></textarea>
+                    <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Follow Us
-                    </h3>
+                </form>
 
-                    <ul class="footer__social">
-                        <a href="" target="_blank" class="footer__social-link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="" target="_blank" class="footer__social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="" target="_blank" class="footer__social-link">
-                            <i class="fa-brands fa-discord"></i>
-                        </a>
-                    </ul>
-                </div> 
+            </div>
 
-                <div class="footer__copy">
-                    &#169; Shrabya. All rights reserved
-                </div>
-        </footer>
-
-    </body>
-    <script>
-        const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+        </section>
 
 
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu')
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <a href="#home" class="top" id="top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script src="{% static 'script.js' %}"></script>
+
+
+</body>
+
+<script>
+    var typed = new Typed(".typing", {
+        strings: ["designer", "developer", "designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     })
-}
 
-
-if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu')
+    var typed = new Typed(".lang", {
+        strings: ["Nepali", "Nepali", "English"],
+        typeSpeed: 130,
+        backSpeed: 100,
+        loop: true
     })
-}
+</script>
 
-const navLink = document.querySelectorAll('.nav__link')
-
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-function scrollHeader(){
-    const header = document.getElementById('header')
-    if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
-
-
-function img(){
-    const home = document.getElementById('home-1')
-    if(this.scrollY >= 50) home.classList.add('animation'); 
-    else home.classList.remove('animation')
-}
-window.addEventListener('scroll', img)
-
-
-
-const audio1 = new Audio();
-audio1.src = "audio/click3.mp3";
-
-    </script>
 </html>
