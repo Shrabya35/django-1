@@ -9,7 +9,7 @@ def index(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         project = request.POST.get('project')
-        Description = request.POST.get('Description')
+        Description = request.POST.get('desc')
         contact = Contact(name=name, email=email, project=project, Description=Description)
         contact.save()
 
